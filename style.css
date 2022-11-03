@@ -1,0 +1,22 @@
+.aspectRatioBox {
+  padding-top: calc(4.5 / 4 * 100%);
+  /* portrait aspect ratio */
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 992px) {
+  .aspectRatioBox {
+    padding-top: calc(2 / 3.5 * 100%);
+    /* change to landscape aspect ratio on lg breakpoint and up */
+  }
+}
+.inner {
+  /* overlay the inner <div> exactly on top of its parent */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.inner h4 {
+  max-width: 200px;
+}
